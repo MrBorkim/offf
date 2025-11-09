@@ -837,46 +837,15 @@ async function showPage(index) {
 
     updatePageCounter();
 
-    // Pre-load sąsiednich stron (prefetch)
-    prefetchAdjacentPages(index);
+    // POPRAWKA: Prefetch WYŁĄCZONY - wszystkie strony przychodzą przez WebSocket
+    // prefetchAdjacentPages(index);  // ❌ WYŁĄCZONE - powodowało infinite loop
 }
 
-// Pre-ładuj sąsiednie strony dla płynnej nawigacji
-async function prefetchAdjacentPages(currentIndex) {
-    const toPreload = [currentIndex - 1, currentIndex + 1];
+// USUNIĘTO: prefetchAdjacentPages() - powodowało infinite loop lazy loading
+// Wszystkie strony przychodzą przez WebSocket więc prefetch nie jest potrzebny
 
-    for (const idx of toPreload) {
-        if (idx >= 0 && idx < previewPages.length) {
-            const page = previewPages[idx];
-
-            if (page.has_image && !page.image) {
-                console.log('[DEBUG] Prefetch strony', idx);
-
-                try {
-                    const response = await fetch('/api/load-page', {
-                        method: 'POST',
-                        headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({
-                            type: page.type,
-                            page_index: page.page_index,
-                            product_id: page.product_id,
-                            formData: formData
-                        })
-                    });
-
-                    const result = await response.json();
-
-                    if (result.success && result.image) {
-                        page.image = result.image;
-                        console.log('[DEBUG] Prefetch OK dla strony', idx);
-                    }
-                } catch (error) {
-                    console.error('[ERROR] Błąd prefetch:', error);
-                }
-            }
-        }
-    }
-}
+// OLD CODE (REMOVED): prefetchAdjacentPages() - powodowało infinite loop
+// Wszystkie strony przychodzą przez WebSocket więc prefetch nie jest potrzebny
 
 // Aktualizuj licznik stron
 function updatePageCounter() {

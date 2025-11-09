@@ -1,138 +1,92 @@
-[WebSocket] ✅ Klient połączony! SID: OTfnq8WZYjAqrv6YAAAB
-================================================================================
-172.225.188.67 - - [09/Nov/2025 23:56:32] "POST /socket.io/?EIO=4&transport=polling&t=PfgrT_3&sid=olwJwzAkHoLIfcdGAAAA HTTP/1.1" 200 -
-172.225.188.67 - - [09/Nov/2025 23:56:32] "GET /socket.io/?EIO=4&transport=polling&t=PfgrT_4&sid=olwJwzAkHoLIfcdGAAAA HTTP/1.1" 200 -
-172.225.188.67 - - [09/Nov/2025 23:56:32] "GET /api/products HTTP/1.1" 200 -
-[PREVIEW] Template: wolftax, Produkty: []
-[CACHE] ❌ MISS - generuję nową ofertę... Key: 97fa670326e43e7b...
-[DEBUG] Używam multi-file template
-[PREVIEW] Przetwarzam: Dok1.docx
-[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmpzicy3d3q.docx
+TOC] Spis treści wygenerowany:
+§       Usługa 1 – Produkt 2 …………………………………………………………………………………………………………  05
+[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmpdfwlch9h.docx
 [CONVERT] 🚀 Używam app4.py (SUPER FAST)...
 [APP4] Czekam na dostęp do unoserver...
-[APP4] 🚀 START: tmpzicy3d3q.docx
-[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmpzicy3d3q.docx -o /root/offf/static/preview_cache/tmp623a3_pu --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
-[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmp623a3_pu
-[APP4] ✓ Znaleziono 1 plików JPG
-[APP4] ✓ SUPER FAST: 1 stron
-[CONVERT] ✓ APP4: 1 stron
-[DEBUG] ✓ Wysłano stronę 1 przez WebSocket
-[PREVIEW] Przetwarzam: Doc2.docx
-[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmp40frx8x1.docx
-[CONVERT] 🚀 Używam app4.py (SUPER FAST)...
-[APP4] Czekam na dostęp do unoserver...
-[APP4] 🚀 START: tmp40frx8x1.docx
-[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmp40frx8x1.docx -o /root/offf/static/preview_cache/tmpb9jjd218 --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
-[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmpb9jjd218
-[APP4] ✓ Znaleziono 1 plików JPG
-[APP4] ✓ SUPER FAST: 1 stron
-[CONVERT] ✓ APP4: 1 stron
-[DEBUG] ✓ Wysłano stronę 2 przez WebSocket
-[PREVIEW] Przetwarzam: doc3.docx
-[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmpfaf9ytzx.docx
-[CONVERT] 🚀 Używam app4.py (SUPER FAST)...
-[APP4] Czekam na dostęp do unoserver...
-[APP4] 🚀 START: tmpfaf9ytzx.docx
-[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmpfaf9ytzx.docx -o /root/offf/static/preview_cache/tmpjf323453 --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
-[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmpjf323453
+[APP4] 🚀 START: tmpdfwlch9h.docx
+[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmpdfwlch9h.docx -o /root/offf/static/preview_cache/tmp0bwgfsfe --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
+[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmp0bwgfsfe
 [APP4] ✓ Znaleziono 1 plików JPG
 [APP4] ✓ SUPER FAST: 1 stron
 [CONVERT] ✓ APP4: 1 stron
 [DEBUG] ✓ Wysłano stronę 3 przez WebSocket
-[DEBUG] Injection point! Wstawiam 0 produktów po doc3.docx
-[PREVIEW] Przetwarzam: doc4.docx
-[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmpub4w22f7.docx
-[CONVERT] 🚀 Używam app4.py (SUPER FAST)...
-[APP4] Czekam na dostęp do unoserver...
-[APP4] 🚀 START: tmpub4w22f7.docx
-[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmpub4w22f7.docx -o /root/offf/static/preview_cache/tmp8rn24dyg --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
-[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmp8rn24dyg
-[APP4] ✓ Znaleziono 1 plików JPG
-[APP4] ✓ SUPER FAST: 1 stron
-[CONVERT] ✓ APP4: 1 stron
+[DEBUG] Injection point! Wstawiam 1 produktów po doc3.docx
+[DEBUG] Dodaję produkt: 2
+[CACHE] ⚡ Używam cache dla: /root/offf/produkty/2.docx
 [DEBUG] ✓ Wysłano stronę 4 przez WebSocket
-[PREVIEW] Przetwarzam: Dok5.docx
-[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmpy4nf568d.docx
+[DEBUG] ✓ Produkt 2 dodany (1 stron)
+[PREVIEW] Przetwarzam: doc4.docx
+[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmprn5fifzo.docx
 [CONVERT] 🚀 Używam app4.py (SUPER FAST)...
 [APP4] Czekam na dostęp do unoserver...
-[APP4] 🚀 START: tmpy4nf568d.docx
-[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmpy4nf568d.docx -o /root/offf/static/preview_cache/tmpfv3s64wm --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
-[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmpfv3s64wm
+[APP4] 🚀 START: tmprn5fifzo.docx
+[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmprn5fifzo.docx -o /root/offf/static/preview_cache/tmpg3dn1p3v --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
+[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmpg3dn1p3v
 [APP4] ✓ Znaleziono 1 plików JPG
 [APP4] ✓ SUPER FAST: 1 stron
 [CONVERT] ✓ APP4: 1 stron
 [DEBUG] ✓ Wysłano stronę 5 przez WebSocket
-[PREVIEW] Przetwarzam: Dok6.docx
-[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmp350330t_.docx
+[PREVIEW] Przetwarzam: Dok5.docx
+[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmp1smmkyvw.docx
 [CONVERT] 🚀 Używam app4.py (SUPER FAST)...
 [APP4] Czekam na dostęp do unoserver...
-[APP4] 🚀 START: tmp350330t_.docx
-[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmp350330t_.docx -o /root/offf/static/preview_cache/tmpmy1mxeth --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
-[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmpmy1mxeth
+[APP4] 🚀 START: tmp1smmkyvw.docx
+[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmp1smmkyvw.docx -o /root/offf/static/preview_cache/tmpceqx05mb --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
+[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmpceqx05mb
 [APP4] ✓ Znaleziono 1 plików JPG
 [APP4] ✓ SUPER FAST: 1 stron
 [CONVERT] ✓ APP4: 1 stron
 [DEBUG] ✓ Wysłano stronę 6 przez WebSocket
+[PREVIEW] Przetwarzam: Dok6.docx
+[CONVERT] Rozpoczynam konwersję: /root/offf/static/preview_cache/tmp11vdbfoc.docx
+[CONVERT] 🚀 Używam app4.py (SUPER FAST)...
+[APP4] Czekam na dostęp do unoserver...
+[APP4] 🚀 START: tmp11vdbfoc.docx
+[APP4] Cmd: python /root/offf/app4.py /root/offf/static/preview_cache/tmp11vdbfoc.docx -o /root/offf/static/preview_cache/tmposr2jc06 --dpi 100 --quality 85 --uc-host 127.0.0.1 --uc-port 2003
+[APP4] stdout: OK: zapisano 1 stron JPG w: /root/offf/static/preview_cache/tmposr2jc06
+[APP4] ✓ Znaleziono 1 plików JPG
+[APP4] ✓ SUPER FAST: 1 stron
+[CONVERT] ✓ APP4: 1 stron
+[DEBUG] ✓ Wysłano stronę 7 przez WebSocket
 [DEBUG] Multi-file: produkty już wstawione w injection point
-[DEBUG] Streaming zakończony - 6 stron
-172.225.188.67 - - [09/Nov/2025 23:56:51] "POST /api/preview-full-offer HTTP/1.1" 200 -
+[DEBUG] Streaming zakończony - 7 stron
+172.225.188.67 - - [10/Nov/2025 00:01:22] "POST /api/preview-full-offer HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:52] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:23] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:52] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:23] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:53] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:23] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:53] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:25] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:54] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:25] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:54] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:25] "POST /api/load-page HTTP/1.1" 200 -
+[DEBUG] Lazy loading strony: type=product, index=0, product=2
+[CACHE] ⚡ Używam cache dla: /root/offf/produkty/2.docx
+172.225.188.67 - - [10/Nov/2025 00:01:26] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:54] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:26] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:55] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:27] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:55] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:27] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:55] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:28] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:55] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:28] "POST /api/load-page HTTP/1.1" 200 -
 [DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:56] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:57] "POST /api/load-page HTTP/1.1" 200 -
-[DEBUG] Lazy loading strony: type=template, index=0, product=None
-[ERROR] Błąd lazy loading: name 'template_cache' is not defined
-172.225.188.67 - - [09/Nov/2025 23:56:57] "POST /api/load-page HTTP/1.1" 200 -
+[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!
+172.225.188.67 - - [10/Nov/2025 00:01:28] "POST /api/load-page HTTP/1.1" 200 -

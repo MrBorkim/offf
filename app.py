@@ -365,7 +365,7 @@ def convert_docx_to_images(docx_path, use_cache=True, progress_callback=None):
             if progress_callback:
                 progress_callback("⚡ SUPER FAST conversion (app4.py)...", 20)
 
-            images = convert_docx_to_images_unoserver(docx_path, dpi=100, quality=85)
+            images = convert_docx_to_images_unoserver(docx_path, dpi=72, quality=85)
 
             if images:
                 # SUKCES! Zapisz do cache
@@ -450,7 +450,7 @@ def convert_docx_to_images(docx_path, use_cache=True, progress_callback=None):
             if progress_callback:
                 progress_callback("Konwersja PDF na obrazy...", 30)
 
-            images = convert_from_path(pdf_path, dpi=100)  # Zmniejszono z 150 na 100 dla szybkości
+            images = convert_from_path(pdf_path, dpi=72)  # Zmniejszono z 150 na 100 dla szybkości
             print(f"[DEBUG] Wygenerowano {len(images)} stron")
 
             image_data_list = []
