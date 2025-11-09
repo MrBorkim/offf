@@ -688,18 +688,24 @@ async function updatePreview(force = false) {
             if (result.pages_metadata) {
                 previewPages = result.pages_metadata.map(meta => ({
                     ...meta,
-                    // WAŻNE: Metadane nie mają obrazów! Obrazy przyjdą przez WebSocket
-                    has_image: false,
-                    image: null,
-                    status: 'pending'  // Ustaw jako pending - zaktualizuje się jak przyjdzie WebSocket
+                    // POPRAWKA: NIE nadpisuj has_image i status jeśli backend je już ustawił!
+                    has_image: meta.has_image !== undefined ? meta.has_image : false,
+                    image: meta.image || null,
+                    status: meta.status || 'pending'
                 }));
 
-                console.log('[DEBUG] Zainicjowano', previewPages.length, 'stron (czekam na WebSocket)');
+                console.log('[DEBUG] Zainicjowano', previewPages.length, 'stron');
+                console.log('[DEBUG] From cache:', result.from_cache);
 
-                // Renderuj zakładki (będą wyszarzone - pending)
+                // Renderuj zakładki
                 renderPagesTabs();
 
-                // NIE POKAZUJ jeszcze - poczekaj na WebSocket!
+                // POPRAWKA: Jeśli z cache - POKAŻ OD RAZU pierwszą stronę!
+                if (result.from_cache && previewPages.length > 0 && previewPages[0].image) {
+                    console.log('[DEBUG] ⚡ CACHE HIT - pokazuję stronę 1 od razu!');
+                    currentPageIndex = 0;
+                    showPage(0);
+                }
             }
 
             // Zaktualizuj cache dla kolejnych porównań

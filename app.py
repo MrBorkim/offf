@@ -365,7 +365,7 @@ def convert_docx_to_images(docx_path, use_cache=True, progress_callback=None):
             if progress_callback:
                 progress_callback("⚡ SUPER FAST conversion (app4.py)...", 20)
 
-            images = convert_docx_to_images_unoserver(docx_path, dpi=200, quality=90)
+            images = convert_docx_to_images_unoserver(docx_path, dpi=100, quality=85)
 
             if images:
                 # SUKCES! Zapisz do cache
