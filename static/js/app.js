@@ -793,38 +793,12 @@ async function showPage(index) {
 
     const previewPage = document.getElementById('preview-page');
 
-    // Lazy loading: jeśli strona nie ma obrazu, pobierz go
-    if (page.has_image && !page.image) {
-        console.log('[DEBUG] Lazy loading strony', index);
-        previewPage.innerHTML = `
-            <div class="preview-placeholder">
-                <div class="spinner"></div>
-                <p>Ładowanie strony ${page.number}...</p>
-            </div>
-        `;
+    // POPRAWKA: Lazy loading WYŁĄCZONE - wszystkie strony przychodzą przez WebSocket
+    // Jeśli strona nie ma obrazu, to znaczy że WebSocket jeszcze go nie dostarczył
+    // W tym przypadku pokaż placeholder zamiast próbować lazy loading
 
-        try {
-            const response = await fetch('/api/load-page', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    type: page.type,
-                    page_index: page.page_index,
-                    product_id: page.product_id,
-                    formData: formData
-                })
-            });
-
-            const result = await response.json();
-
-            if (result.success && result.image) {
-                page.image = result.image;  // Zapisz w cache frontendu
-                console.log('[DEBUG] Strona załadowana z serwera');
-            }
-        } catch (error) {
-            console.error('[ERROR] Błąd lazy loading:', error);
-        }
-    }
+    // Stare lazy loading - WYŁĄCZONE bo powodowało infinite loop
+    // if (page.has_image && !page.image) { ... }
 
     // Wyświetl obraz zamiast HTML
     if (page.image) {

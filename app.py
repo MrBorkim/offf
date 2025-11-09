@@ -1500,15 +1500,13 @@ def load_single_page():
 
     try:
         if page_type == 'template':
-            # Sprawdź cache szablonu
-            form_hash = get_form_data_hash(form_data)
-            if form_hash and form_hash in template_cache:
-                template_images = template_cache[form_hash]
-                if 0 <= page_index < len(template_images):
-                    return jsonify({
-                        'success': True,
-                        'image': template_images[page_index]
-                    })
+            # Template strony są zawsze wysyłane przez WebSocket - lazy loading nieaktywne
+            # Jeśli frontend próbuje załadować stronę template, znaczy że coś poszło nie tak
+            print(f"[WARNING] Lazy loading dla template - strony powinny być w cache frontendu!")
+            return jsonify({
+                'success': False,
+                'error': 'Template pages should be loaded via WebSocket'
+            })
 
         elif page_type == 'product' and product_id:
             # Pobierz z cache produktu
