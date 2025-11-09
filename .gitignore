@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+.webassets-cache
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Projekt - wygenerowane pliki
+generated_offers/*.docx
+saved_offers/*.json
+static/preview_cache/*
+logs/*.log
+*.pdf
+
+# Projekt - tymczasowe pliki Word
+~$*.docx
+
+# Cache
+*.cache
+*.tmp
+
+# Backup
+*.bak
+backup/
+
+# Node (jeśli używasz npm)
+node_modules/
+package-lock.json
+yarn.lock
