@@ -1151,7 +1151,7 @@ def preview_full_offer():
             doc = replace_placeholders(doc, form_data)
 
             # SPIS TREŚCI - jeśli to plik TOC, wygeneruj i wstaw
-            if needs_toc:
+            if file_info.get('is_toc') and len(selected_products) > 0:
                 toc_config = template_data.get('toc', {})
                 start_page = toc_config.get('start_page', 5)
 

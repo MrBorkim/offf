@@ -1,0 +1,68 @@
+===============================================================================
+  SZYBKA NAPRAWA - Brak podglądów (NameError: needs_toc)
+===============================================================================
+
+PROBLEM:
+--------
+NameError: name 'needs_toc' is not defined (linia 70 w beldy.txt)
+Skutek: Brak podglądów ofert - HTTP 500 Error
+
+
+ROZWIĄZANIE (wykonaj na serwerze):
+-----------------------------------
+
+1. ZATRZYMAJ APLIKACJĘ:
+   sudo systemctl stop ofertowanie
+   (lub Ctrl+C jeśli uruchomiona ręcznie)
+
+
+2. NAPRAW KOD (edytuj app.py linia 1154):
+
+   cd /root/offf
+   nano app.py
+
+   Znajdź linię 1154 (naciśnij Ctrl+_ -> wpisz 1154):
+
+   ZMIEŃ Z:
+       if needs_toc:
+
+   NA:
+       if file_info.get('is_toc') and len(selected_products) > 0:
+
+   Zapisz: Ctrl+O, Enter
+   Wyjdź: Ctrl+X
+
+
+3. ALTERNATYWNIE - skopiuj naprawiony plik:
+
+   Na LOKALNYM komputerze:
+   scp /Users/maksymiliansiwecki/Documents/GitHub/offf/app.py root@your-server-ip:/root/offf/app.py
+
+
+4. URUCHOM PONOWNIE:
+   cd /root/offf
+   source venv/bin/activate
+   python app.py
+
+
+5. TESTUJ:
+   Otwórz: http://your-server-ip:40207
+   Wybierz szablon → Podgląd
+   Powinny pojawić się strony! ✅
+
+
+WERYFIKACJA:
+------------
+W logach powinno być:
+  [PREVIEW] Przetwarzam: Dok1.docx
+  [CONVERT] 🚀 Używam app4.py (SUPER FAST)...
+  [APP4] ✓ SUPER FAST: 1 stron
+
+BEZ błędu:
+  ❌ NameError: name 'needs_toc' is not defined
+
+
+===============================================================================
+Data: 2025-11-09
+Wersja: 3.0.1 (bugfix)
+===============================================================================

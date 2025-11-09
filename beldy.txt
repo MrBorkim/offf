@@ -1,0 +1,70 @@
+APP4] ✓ Znaleziono 1 plików JPG
+[APP4] ✓ SUPER FAST: 1 stron
+[CONVERT] ✓ APP4: 1 stron
+[STARTUP] ✓ 1.docx gotowy
+[STARTUP] Pre-generuję 6/8: 8.docx
+[CACHE] ⚡ Używam cache dla: /root/offf/produkty/8.docx
+[STARTUP] ✓ 8.docx gotowy
+[STARTUP] Pre-generuję 7/8: 3.docx
+[CACHE] ⚡ Używam cache dla: /root/offf/produkty/3.docx
+[STARTUP] ✓ 3.docx gotowy
+[STARTUP] Pre-generuję 8/8: 7.docx
+[CACHE] ⚡ Używam cache dla: /root/offf/produkty/7.docx
+[STARTUP] ✓ 7.docx gotowy
+[STARTUP] Pre-generowanie zakończone! Cache zawiera 2 produktów
+172.225.188.67 - - [09/Nov/2025 23:28:57] "GET /socket.io/?EIO=4&transport=polling&t=Pfgl9zV HTTP/1.1" 200 -
+================================================================================
+[WebSocket] ✅ Klient połączony! SID: YJqG3DpPDYlxJjOQAAAB
+================================================================================
+172.225.188.67 - - [09/Nov/2025 23:28:58] "POST /socket.io/?EIO=4&transport=polling&t=Pfgl9-v&sid=rVJwsODXmWqqqQvFAAAA HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:28:58] "GET /socket.io/?EIO=4&transport=polling&t=Pfgl9-y&sid=rVJwsODXmWqqqQvFAAAA HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:28:58] "GET /socket.io/?EIO=4&transport=polling&t=PfglA01&sid=rVJwsODXmWqqqQvFAAAA HTTP/1.1" 200 -
+[WebSocket] ❌ Klient rozłączony: YJqG3DpPDYlxJjOQAAAB
+172.225.188.67 - - [09/Nov/2025 23:28:58] "GET /socket.io/?EIO=4&transport=websocket&sid=rVJwsODXmWqqqQvFAAAA HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:28:58] "GET / HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:28:58] "GET /static/css/style.css HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:28:58] "GET /static/js/app.js HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:28:59] "GET /api/templates HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:29:00] "GET /api/template/wolftax HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:29:00] "GET /socket.io/?EIO=4&transport=polling&t=PfglAaM HTTP/1.1" 200 -
+================================================================================
+[WebSocket] ✅ Klient połączony! SID: Lsqr3WPZ8IhUP0wnAAAD
+================================================================================
+172.225.188.67 - - [09/Nov/2025 23:29:00] "POST /socket.io/?EIO=4&transport=polling&t=PfglAb6&sid=B6lZxDHD6frkSL_7AAAC HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:29:00] "GET /socket.io/?EIO=4&transport=polling&t=PfglAb7&sid=B6lZxDHD6frkSL_7AAAC HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:29:00] "GET /socket.io/?EIO=4&transport=polling&t=PfglAb_&sid=B6lZxDHD6frkSL_7AAAC HTTP/1.1" 200 -
+172.225.188.67 - - [09/Nov/2025 23:29:00] "GET /api/products HTTP/1.1" 200 -
+[PREVIEW] Template: wolftax, Produkty: []
+[CACHE] ❌ MISS - generuję nową ofertę... Key: 97fa670326e43e7b...
+[DEBUG] Używam multi-file template
+[PREVIEW] Przetwarzam: Dok1.docx
+172.225.188.67 - - [09/Nov/2025 23:29:00] "POST /api/preview-full-offer HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/root/offf/venv/lib/python3.11/site-packages/flask/app.py", line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/flask_socketio/__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/engineio/middleware.py", line 74, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/flask/app.py", line 1458, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/venv/lib/python3.11/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/offf/app.py", line 1154, in preview_full_offer
+    if needs_toc:
+       ^^^^^^^^^^
+NameError: name 'needs_toc' is not defined
